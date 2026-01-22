@@ -2,6 +2,7 @@ clip_cadastre_by_suburb_V0.py
 clip_cadastre_postgis_V0.py
 db_config_local.py
 bcc-traffic-pipeline/scripts/db_config_local.py
-bcc-traffic-pipeline/scripts/step_1_fetch_station_ref_v0.py
-bcc-traffic-pipeline/scripts/step2_fetch_yearly_summary_v0.py
+bcc-traffic-pipeline/scripts/step_1_fetch_station_ref_V0.py
+bcc-traffic-pipeline/scripts/step2_fetch_yearly_summary_V0.py
 __pycache__/
+bcc-busstops-paths-coverage\busstops_paths_coverage_V0.py
