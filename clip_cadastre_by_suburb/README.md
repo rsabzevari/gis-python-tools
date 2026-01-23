@@ -8,4 +8,3 @@ This folder contains scripts to **clip cadastre parcels to a selected suburb** u
 ---
 
 ## Folder contents
-

@@ -1,29 +1,44 @@
 # GIS Python Tools
 
-Small collection of GIS utilities written in Python, mainly using GeoPandas.
+A collection of small, practical GIS mini-projects using **Python (GeoPandas)** and **PostGIS**.  
+Each project lives in its own folder with its own README.
 
-## clip_cadastre_by_suburb_V1.py
+---
 
-This script clips a cadastre layer to a single suburb and exports the result.
+## Projects
 
-### Features
+### 1) `bcc-busstops-paths-coverage/`
+Bus stop coverage and served-path analysis (GeoPandas + optional PostGIS).  
+See the folder README for workflow, outputs, and how to run.
 
-- Opens file dialogs to select:
-  - cadastre layer (e.g. NSW cadastre)
-  - suburbs layer (with a `suburbname` field)
-  - output folder
-- Asks for:
-  - suburb name (matched case-insensitively)
-  - output file name
-  - output format (`shp`, `gpkg`, or `geojson`)
-- Validates:
-  - output extension
-  - suburb exists in the layer
-  - CRS of cadastre and suburbs match
-  - clip result is not empty
+### 2) `bcc-traffic-pipeline/`
+Traffic counts pipeline utilities and SQL scripts.  
+- `scripts/` contains Python utilities (V1 recommended)
+- `sql/` contains SQL steps and helpers  
+See the folder README(s) for run steps.
+
+### 3) `clip_cadastre_by_suburb/`
+Clip cadastre parcels to a chosen suburb.
+- **File-based** GeoPandas version (select inputs via dialogs, export to shp/gpkg/geojson)
+- **PostGIS** version (load cadastre/suburbs from DB, clip, export/write back)  
+➡️ Open `clip_cadastre_by_suburb/README.md`
+
+### 4) `zone_review/`
+Multi-zone lot slice extraction (cadastre × zoning intersection).
+- SQL (PostGIS) and Python (GeoPandas) implementations  
+➡️ Open `zone_review/README.md`
+
+---
+
+## Setup
 
 ### Requirements
+Typical packages used across projects:
+- `geopandas`
+- `sqlalchemy`
+- `psycopg2-binary`
+- `requests`
 
-- Python 3.x  
-- GeoPandas  
-- Tkinter (comes with standard Python on Windows)
+Example install:
+```bash
+pip install geopandas sqlalchemy psycopg2-binary requests
