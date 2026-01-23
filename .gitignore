@@ -1,10 +1,11 @@
-clip_cadastre_by_suburb_V0.py
-clip_cadastre_postgis_V0.py
-db_config_local.py
 bcc-traffic-pipeline/scripts/db_config_local.py
 bcc-traffic-pipeline/scripts/step_1_station_reference_V0.py
 bcc-traffic-pipeline/scripts/step_2_yearly_summary_V0.py
 __pycache__/
 bcc-busstops-paths-coverage/busstops_paths_coverage_V0.py
+bcc-busstops-paths-coverage/db_config_local.py
 zone_review/scripts/extract_slices_V0.py
 zone_review/sql/extract_slices_V0.sql
+clip_cadastre_by_suburb/scripts/db_config_local.py
+clip_cadastre_by_suburb/scripts/clip_cadastre_postgis_V0.py
+clip_cadastre_by_suburb/scripts/clip_cadastre_by_suburb_V0.py
