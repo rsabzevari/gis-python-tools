@@ -1,5 +1,0 @@
-DB_USER = "postgres"
-DB_PASSWORD = "@a5246990A"
-DB_NAME = "gis_projects"
-DB_HOST = "localhost"
-DB_PORT = "5432"
