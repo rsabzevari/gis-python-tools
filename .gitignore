@@ -9,3 +9,4 @@ zone_review/sql/extract_slices_V0.sql
 clip_cadastre_by_suburb/scripts/db_config_local.py
 clip_cadastre_by_suburb/scripts/clip_cadastre_postgis_V0.py
 clip_cadastre_by_suburb/scripts/clip_cadastre_by_suburb_V0.py
+spatial_qaqc/spatial_qaqc_v0.py
