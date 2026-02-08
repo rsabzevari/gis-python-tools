@@ -246,7 +246,7 @@ def report_builder(gdf: gpd.GeoDataFrame, layer_name: str = "layer") -> dict:
     - summarize() (dataset info)
     - geometry_failure_all() (failures table)
     """
-    summary = summarize(gdf, name=layer_name)
+    summary = summarize(gdf)
     failures = geometry_failure_all(gdf)
 
     by_severity = failures["severity"].value_counts(dropna=False).to_dict()
