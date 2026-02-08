@@ -276,7 +276,7 @@ def write_report_json(report: dict, out_path: str) -> None:
 
 
 # -------------------------------------------------------------------
-# Manual run (V1) — file dialogs (same style as clip cadastre)
+# Manual run (V1) — file dialogs
 # -------------------------------------------------------------------
 def main() -> None:
     print("Shapely version:", shapely.__version__)
